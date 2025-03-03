@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--
+  ***
+  Graham Godfrey
+  This is set up as a blog page. The page is essentially structured as a series
+  of posts after the heading area.
+  ***
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Things I like</title>
+    <script src="index.js"></script>
+    <link rel="icon" href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=DM+Serif+Text&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="blog-background" class="picture">
+      <div id="blog" class="basic">
+        <header>
+          <div>
+            <h1>Blog</h1>
+          </div>
+          <div>
+            <button class="background-btn">Change Background!</button>
+          </div>
+          <div>
+            <button class="text-color">Dawg Mode</button>
+          </div>
+          <div>
+            <button id="meme-mode">Meme Mode</button>
+          </div>
+          <div>
+            <button id="number-game">Fun Stuff</button>
+          </div>
+        </header>
+        <p id="error" class="hidden">Meme API request failed, Meme Mode unavailable :(</p>
+        <p id="subhead"></p>
+        <ul>
+          <li>
+          </li>
+          <li>
+            <hr>
+            <header>
+              <h2>New project!</h2>
+            </header>
+            <p>
+              I recently got into chess and was inspired to create my own chess website!
+              I am having to relearn a bit of how to make websites so that should be Fun.
+              I also feel like there should be a more elegant way to create posts for this blog.
+              Probably utilizing a database for posts would be good?
+              Or a seperate file?
+              -3/22/23
+            </p>
+          </li>
+          <li>
+            <hr>
+            <header>
+              <h2>Autological words</h2>
+              <img id="subheadimg" src="img/selfreferential.png" alt="Two arrows pointing back on themselves">
+            </header>
+            <p>
+              Many times in the past I have heard some word and noticed that it could, in some way,
+              be said to describe <em>itself</em>. I never really had a precise way of describing or
+              putting a name to this phenomenon until today when I looked up "words that describe
+              themselves" in google and came across what I was looking for on the wikipedia page for
+              the <a target="_blank" href="https://en.wikipedia.org/wiki/Grelling%E2%80%93Nelson_paradox">
+              Grelling–Nelson paradox</a> which mentioned <a target="_blank"
+              href="https://en.wikipedia.org/wiki/Autological_word">autological words</a>.
+            </p>
+            <p>
+              For me, when I would think about this over the last couple years the perenial example
+              I would always go back to was synonym. I would say synonym was a synonym of synonym so
+              it describes itself, although actually a synonym of a word has to be a different word
+              so that doesn't really make sense. But then I would also think of antonym which is a
+              real autological word which describes itself because of course it is the antonym of
+              the word synonym.
+            </p>
+            <p>
+              I found a big <a target="_blank" href="http://www.segerman.org/autological.html">list</a>
+              of autological words by Henry Segerman but I believe there are some I've thought of in
+              the past which are not there. I should create a list of them somewhere sometime. He
+              talks about the Grelling-Nelson paradox there as well. Basically its about whether
+              heterological (meaning a word that doesn't describe itself) describes itself which
+              results in a paradox.
+            </p>
+            <p>
+              Which is good! Because as we all know, paradoxes are contradictions, and contraditions
+              are fun!
+            </p>
+          </li>
+          <li>
+            <hr>
+            <header>
+              <h2>How to quote something!</h2>
+            </header>
+            <p>
+              Use "" like, he said "that's awful!"
+            </p>
+          </li>
+          <li>
+            <hr>
+            <header>
+              <h2>Class Registration Tips</h2>
+            </header>
+            <ol>
+              <li>
+                Complete the pre-registration steps, (you won't want to be caught at the last
+                minute having to rush through these)
+              </li>
+              <li>
+                When you want to add a class to myplan, always check the enrollment restrictions
+                by clicking on the enrollment restrictions tag or view more details, classes will
+                often have requirements based on major or class standing and if you don't meet
+                those requirements your <em>entire</em> registration will be denied, potentialy
+                losing you out on a spot in another class and you'll have to remove this class
+                anyway.
+              </li>
+              <li>
+                Make sure you know what day you are registering for and that you set an alarm for
+                something like fifteen minutes before 6am, you don't want to let some unforseen
+                problem or slow boot up to make you miss registration if you wake up too close to
+                6am.
+              </li>
+              <li>
+                As 6am approaches hover your mouse over the send to registration button and click it
+                1 to 2 seconds before 6 am actually arrives. Set up a clock with the time up to the
+                second so you can see this. Even though you are clicking send before 6am it will
+                still accept it in my experience, and classes are first come first served so getting
+                in even a moment earlier might make the difference for you.
+              </li>
+              <li>
+                Be ready to register with sln as a backup. When the traffic is really high with
+                everyone trying to register all at the same moment, sometimes the whole site has
+                been brought to a standstill with people unable to register while stuck on frozen or
+                loading pages. Registering with sln can sometimes get around this slowdown and save
+                you from the UW's apparently awful prepardness for the flood of 6am registrations
+                that they mandated.
+              </li>
+            </ol>
+          </li>
+        </ul>
+        <footer>Background Image Credit: Graham Godfrey</footer>
+      </div>
+    </div>
+    <div id="guesser-background" class="picture hidden">
+      <div id="guesser" class="basic">
+        <header>
+          <div>
+            <h1>Fun Stuff</h1>
+          </div>
+          <div>
+            <button class="blog-btn">Blog</button>
+          </div>
+        </header>
+        <p id="error-fun-page" class="hidden"></p>
+        <form id="number-guesser">
+          <label for="number-guesser-input">What number am I thinking of? (Integer 1 - 1000)</label>
+          <input id="number-guesser-input" name="number-guesser" type="text">
+          <button>Submit</button>
+        </form>
+        <p id="guess-status"></p>
+        <form id="name-guesser">
+          <label for="name-guesser-input">Type a word you want the defenition for here</label>
+          <input id="name-guesser-input" name="name-guesser" type="text">
+          <button>Submit</button>
+        </form>
+        <p id="definition"></p>
+        <form id="new-word" class="hidden">
+          <label for="new-word-input">Type the defenition for your new word</label>
+          <input id="new-word-input" name="new-word" type="text">
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

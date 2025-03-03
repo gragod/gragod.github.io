@@ -1,0 +1,114 @@
+/*
+  Graham Godfrey
+  This is the style file for index.html. It includes the different options
+  that the js file applies when the interactive buttons are clicked.
+*/
+
+body {
+  margin: 0%;
+}
+
+.basic {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  font-family: 'DM Serif Text', serif;
+}
+
+#blog-background {
+  border: 0cm;
+  background-color: rgb(76, 187, 126);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture {
+  background-image: url("img/background.jpg");
+}
+
+p, #subhead, section {
+  font-size: 14pt;
+}
+
+h1 {
+  font-size: 32pt;
+  text-decoration: underline;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-block-end: -0.15em;
+}
+
+#subhead {
+  color: slategray;
+  font-style: italic;
+}
+
+#subheadimg {
+  width: 100px;
+  height: 128px;
+}
+
+#happy, #sad {
+  width: 450px;
+  height: 400px;
+}
+
+#sad {
+  width: 600px;
+}
+
+.credit, footer {
+  font-size: 10pt;
+  font-family: 'Aldrich', sans-serif;
+}
+
+#blog > article, footer {
+  border-top-style: solid;
+  border-top-width: medium;
+}
+
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+header > div {
+  align-self: flex-end;
+  padding-right: 10px;
+}
+
+.purple {
+  color: rgb(186, 8, 240);
+}
+
+.gold {
+  color: gold;
+}
+
+ul {
+  list-style: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+}
+
+hr {
+  color: black;
+}
+
+li li {
+  font-size: 14pt;
+}
+
+.memeMode {
+  height: 350px;
+}
+
+.hidden {
+  display: none;
+}
+
+#error {
+  color: red;
+}
