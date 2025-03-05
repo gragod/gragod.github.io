@@ -7,8 +7,6 @@
 "use strict";
 (function() {
 
-  const MEME_API_URL = "https://api.imgflip.com/get_memes";
-
   window.addEventListener("load", init);
 
   /**
