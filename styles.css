@@ -4,26 +4,50 @@
   that the js file applies when the interactive buttons are clicked.
 */
 
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0%;
+}
+
+#leftgrad {
+  background-image: linear-gradient(to left, white , rgb(123,12,248));
+  width: 100%;
+}
+
+#rightgrad {
+  background-image: linear-gradient(to right, white , rgb(150,150,150));
+  width: 100%;
+}
+
+#home {
+  background-color: white;
+  margin-top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  background-blend-mode: 100%;
 }
 
 .basic {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 100%;
   font-family: 'DM Serif Text', serif;
 }
 
-#blog-background {
+#main-background {
+  min-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
   border: 0cm;
-  background-color: rgb(76, 187, 126);
+  background-color: rgb(28, 205, 137);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.picture {
-  background-image: url("img/background.jpg");
+  /*background-image: url("img/background.jpg");*/
+  background-attachment: fixed;
 }
 
 p, #subhead, section {
@@ -32,14 +56,14 @@ p, #subhead, section {
 
 h1 {
   font-size: 32pt;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   margin-top: 0px;
   margin-bottom: 0px;
   margin-block-end: -0.15em;
 }
 
 #subhead {
-  color: slategray;
+  color: rgb(140, 169, 197);
   font-style: italic;
 }
 

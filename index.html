@@ -16,27 +16,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=DM+Serif+Text&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="blog-background" class="picture">
-      <div id="blog" class="basic">
+    <div id="main-background">
+      <div id="leftgrad"></div>
+      <div id="home" class="basic">
         <header>
           <div>
-            <h1>Blog</h1>
-          </div>
-          <div>
-            <button class="background-btn">Change Background!</button>
-          </div>
-          <div>
-            <button class="text-color">Dawg Mode</button>
-          </div>
-          <div>
-            <button id="meme-mode">Meme Mode</button>
-          </div>
-          <div>
-            <button id="number-game">Fun Stuff</button>
+            <h1>Graham Godfrey</h1>
           </div>
         </header>
-        <p id="error" class="hidden">Meme API request failed, Meme Mode unavailable :(</p>
-        <p id="subhead"></p>
+        <!--<p id="subhead"></p>-->
+        <svg id="subhead" class="legit-marquee"
+          viewBox="0 50 600 100"
+          content="This is a website"
+          pathd="M47,112c44,-4 50,-26 80,-24c30,2 44,21 73,23c29,2 38,-27 77,-28c39,-1 37,28 84,27c47,-1 53,-29 95,-31c42,-2 50,28 84,30"
+          speed="0.7"
+          textsize="20"
+        ></svg>
+        <!--<script src="https://cdn.jsdelivr.net/gh/olivernorred/legit-marquees/legit-marquees.js"></script>-->
+        <p>Test of Text</p>
+        <footer>Legit Marquees Credit: Oliver Norred</footer>
+      </div>
+      <div id="rightgrad"></div>
+    </div>
+    <div id="blog-background" class="picture hidden">
+      <div id="guesser" class="basic">
+        <header>
+          <div>
+            <h1>Fun Stuff</h1>
+          </div>
+          <div>
+            <button class="blog-btn">Blog</button>
+          </div>
+        </header>
+        <p id="error-fun-page" class="hidden"></p>
         <ul>
           <li>
           </li>
@@ -141,20 +153,6 @@
             </ol>
           </li>
         </ul>
-        <footer>Background Image Credit: Graham Godfrey</footer>
-      </div>
-    </div>
-    <div id="guesser-background" class="picture hidden">
-      <div id="guesser" class="basic">
-        <header>
-          <div>
-            <h1>Fun Stuff</h1>
-          </div>
-          <div>
-            <button class="blog-btn">Blog</button>
-          </div>
-        </header>
-        <p id="error-fun-page" class="hidden"></p>
         <form id="number-guesser">
           <label for="number-guesser-input">What number am I thinking of? (Integer 1 - 1000)</label>
           <input id="number-guesser-input" name="number-guesser" type="text">

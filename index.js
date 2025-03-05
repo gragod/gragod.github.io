@@ -15,28 +15,8 @@
    * waits to run the javascript until the page has fully loaded, calling the other functions
    */
   function init() {
-    let button = document.querySelectorAll("header button");
-    button[0].addEventListener("click", changeImage);
-    button[1].addEventListener("click", goDawgs);
-    button[2].addEventListener("click", memeToggle);
-    button[3].addEventListener("click", funStuffView);
-    button[4].addEventListener("click", funStuffView);
     headingMessage();
-    featuredPost();
-    memeMode();
-    let form = document.querySelectorAll("form");
-    form[0].addEventListener("submit", (event) => {
-      event.preventDefault();
-      numberGuesser();
-    });
-    form[1].addEventListener("submit", (event) => {
-      event.preventDefault();
-      getWord();
-    });
-    form[2].addEventListener("submit", (event) => {
-      event.preventDefault();
-      newWord();
-    });
+    backGroundColorizer();
   }
 
   /**
@@ -197,14 +177,20 @@
 
   /**
    * randomizes a fun message in the site heading
+   * make this a legit marquees element
    */
   function headingMessage() {
+    let lMscript = document.createElement('script');
+    lMscript.src = "https://cdn.jsdelivr.net/gh/olivernorred/legit-marquees/legit-marquees.js";
     let element = document.getElementById("subhead");
-    let message = ["test text tech test", "A blog-like page...",
+    let message = ["test text tech test",
     "I've been known to walk away in the middle of...", "Doing less with more!",
     "Ya like jazz?", "You're my favorite deputy", "TERRAIN - TERRAIN - PULL UP - PULL UP",
     "chess is fun!"];
-    element.innerText = message[random(message.length)];
+    let eek = element.getAttribute("content");
+    element.setAttribute('content', message[random(message.length)]);
+    console.log("element is: " + eek);
+    document.getElementById("home").appendChild(lMscript);
   }
 
   /**
@@ -226,5 +212,45 @@
   function random(max) {
     return Math.floor(Math.random() * max);
   }
+
+  function backGroundColorizer() {
+    let num1 = random(255);
+    let num1inc = 1;
+    let num2 = random(255);
+    let num2inc = 1;
+    let num3 = random(255);
+    let num3inc = 1;
+    let element = document.getElementById('leftgrad');
+    element.style.backgroundImage = "linear-gradient(to left, white , rgb(" + num1 + "," + num3 + "," + num2 + ")";
+    let element2 = document.getElementById('rightgrad');
+    element2.style.backgroundImage = "linear-gradient(to right, white , rgb(" + num3 + "," + num2 + "," + num1 + ")";
+    function colorizerHelper() {
+      if(num1 == 255) {
+        num1inc = -1;
+      }
+      if(num1 == 0) {
+        num1inc = 1;
+      }
+      num1 = num1 + num1inc;
+      if(num2 == 255) {
+        num2inc = -1;
+      }
+      if(num2 == 0) {
+        num2inc = 1;
+      }
+      num2 = num2 + num2inc;
+      if(num2 == 255) {
+        num2inc = -1;
+      }
+      if(num2 == 0) {
+        num2inc = 1;
+      }
+      num3 = num3 + num3inc;
+      element.style.backgroundImage = "linear-gradient(to left, white , rgb(" + num1 + "," + num3 + "," + num2 + ")";
+      element2.style.backgroundImage = "linear-gradient(to right, white , rgb(" + num3 + "," + num2 + "," + num1 + ")";
+    }
+
+    let interval = setInterval(colorizerHelper, 50);
+  };
 
 })();
