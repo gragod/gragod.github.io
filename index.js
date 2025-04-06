@@ -1,8 +1,5 @@
 /**
  * Graham Godfrey
- * This JS file implements the style changing buttons at the top of the web page.
- * It also randomizes the featured post each time the page is loaded as well as
- * the heading message.
  */
 "use strict";
 (function() {
@@ -185,9 +182,7 @@
     "I've been known to walk away in the middle of...", "Doing less with more!",
     "Ya like jazz?", "You're my favorite deputy", "TERRAIN - TERRAIN - PULL UP - PULL UP",
     "chess is fun!"];
-    let eek = element.getAttribute("content");
     element.setAttribute('content', message[random(message.length)]);
-    console.log("element is: " + eek);
     document.getElementById("home").appendChild(lMscript);
   }
 
@@ -237,11 +232,11 @@
         num2inc = 1;
       }
       num2 = num2 + num2inc;
-      if(num2 == 255) {
-        num2inc = -1;
+      if(num3 == 255) {
+        num3inc = -1;
       }
-      if(num2 == 0) {
-        num2inc = 1;
+      if(num3 == 0) {
+        num3inc = 1;
       }
       num3 = num3 + num3inc;
       element.style.backgroundImage = "linear-gradient(to left, white , rgb(" + num1 + "," + num3 + "," + num2 + ")";
