@@ -181,7 +181,7 @@
     let message = ["test text tech test",
     "I've been known to walk away in the middle of...", "Doing less with more!",
     "Ya like jazz?", "You're my favorite deputy", "TERRAIN - TERRAIN - PULL UP - PULL UP",
-    "chess is fun!"];
+    "chess is fun!", "Kept you waiting, huh?", "Ohana means family"];
     element.setAttribute('content', message[random(message.length)]);
     document.getElementById("home").appendChild(lMscript);
   }
