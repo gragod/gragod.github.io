@@ -11,7 +11,29 @@
    */
   function init() {
     headingMessage();
+    pageSetup();
     backGroundColorizer();
+  }
+
+  function pageSetup() {
+    document.getElementById('homeButton').addEventListener('click', function() {
+      window.location.href = "index.html";
+    });
+    document.getElementById('blogButton').addEventListener('click', function() {
+      window.location.href = "blog.html";
+    });
+    document.getElementById('animationButton').addEventListener('click', function() {
+      window.location.href = "animation.html";
+    });
+    document.getElementById('projectsButton').addEventListener('click', function() {
+      window.location.href = "projects.html";
+    });
+    // let currentPage = window.location.pathname.split("/").pop();
+    //Want to have posts relevent to current location pulled in as list??
+    //Make home page bring in all posts sorted by time??
+    //inside #posts > ul make a <li> <hr> <header> <h2> TITLE </h2> </header> <p> BODY </p> </li>
+    // if (currentPage != "index.html") {
+    // }
   }
 
   /**
@@ -181,7 +203,7 @@
     let message = ["test text tech test",
     "I've been known to walk away in the middle of...", "Doing less with more!",
     "Ya like jazz?", "You're my favorite deputy", "TERRAIN - TERRAIN - PULL UP - PULL UP",
-    "chess is fun!", "Kept you waiting, huh?", "Ohana means family"];
+    "chess is fun!", "Kept you waiting, huh?", "Ohana means family", "keepin it cool and comfortable"];
     element.setAttribute('content', message[random(message.length)]);
     document.getElementById("home").appendChild(lMscript);
   }

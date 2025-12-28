@@ -6,6 +6,7 @@
 -->
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
     <title>Graham Godfrey</title>
@@ -14,47 +15,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=DM+Serif+Text&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="main-background">
-      <div id="leftgrad"></div>
-      <div id="home" class="basic">
-        <header>
-          <div>
-            <h1>Graham Godfrey</h1>
-          </div>
-        </header>
-        <!--<p id="subhead"></p>-->
-        <svg id="subhead" class="legit-marquee"
-          viewBox="0 50 600 100"
-          content="This is a website"
-          pathd="M47,112c44,-4 50,-26 80,-24c30,2 44,21 73,23c29,2 38,-27 77,-28c39,-1 37,28 84,27c47,-1 53,-29 95,-31c42,-2 50,28 84,30"
-          speed="0.7"
-          textsize="20"
-        ></svg>
-        <div id="links">
-          <a>Animation</a>
-          <a>Projects</a>
-          <a>Blog</a>
+    <div id="leftgrad"></div>
+    <div id="home" class="basic">
+      <header>
+        <div id="headroom">
         </div>
-        <!--<script src="https://cdn.jsdelivr.net/gh/olivernorred/legit-marquees/legit-marquees.js"></script>-->
-        <p>Test of Text</p>
-        <footer>Legit Marquees Credit: Oliver Norred</footer>
+        <div>
+          <h1>Graham Godfrey</h1>
+        </div>
+      </header>
+      <!--<p id="subhead"></p>-->
+      <svg id="subhead" class="legit-marquee"
+        viewBox="0 50 600 100"
+        content="This is a website"
+        pathd="M47,112c44,-4 50,-26 80,-24c30,2 44,21 73,23c29,2 38,-27 77,-28c39,-1 37,28 84,27c47,-1 53,-29 95,-31c42,-2 50,28 84,30"
+        speed="-0.7"
+        textsize="20"
+      ></svg>
+      <div id="links">
+        <div id="homeButton"> Home </div>
+        <div id="animationButton"> Animation </div>
+        <div id="projectsButton"> Projects </div>
+        <div id="blogButton"> Blog </div>
       </div>
-      <div id="rightgrad"></div>
-    </div>
-    <div id="blog-background" class="picture hidden">
-      <div id="guesser" class="basic">
-        <header>
-          <div>
-            <h1>Fun Stuff</h1>
-          </div>
-          <div>
-            <button class="blog-btn">Blog</button>
-          </div>
-        </header>
-        <p id="error-fun-page" class="hidden"></p>
+      <!-- <div id="Homepage message">
+          Welcome to my website!
+      </div> -->
+      <div id="posts">
         <ul>
-          <li>
-          </li>
           <li>
             <hr>
             <header>
@@ -68,8 +56,7 @@
               Or a seperate file?
               -3/22/23
             </p>
-          </li>
-          <li>
+          </li>          <li>
             <hr>
             <header>
               <h2>Autological words</h2>
@@ -104,8 +91,7 @@
               Which is good! Because as we all know, paradoxes are contradictions, and contraditions
               are fun!
             </p>
-          </li>
-          <li>
+          </li>          <li>
             <hr>
             <header>
               <h2>How to quote something!</h2>
@@ -113,8 +99,7 @@
             <p>
               Use "" like, he said "that's awful!"
             </p>
-          </li>
-          <li>
+          </li>          <li>
             <hr>
             <header>
               <h2>Class Registration Tips</h2>
@@ -156,24 +141,10 @@
             </ol>
           </li>
         </ul>
-        <form id="number-guesser">
-          <label for="number-guesser-input">What number am I thinking of? (Integer 1 - 1000)</label>
-          <input id="number-guesser-input" name="number-guesser" type="text">
-          <button>Submit</button>
-        </form>
-        <p id="guess-status"></p>
-        <form id="name-guesser">
-          <label for="name-guesser-input">Type a word you want the defenition for here</label>
-          <input id="name-guesser-input" name="name-guesser" type="text">
-          <button>Submit</button>
-        </form>
-        <p id="definition"></p>
-        <form id="new-word" class="hidden">
-          <label for="new-word-input">Type the defenition for your new word</label>
-          <input id="new-word-input" name="new-word" type="text">
-          <button>Submit</button>
-        </form>
       </div>
+      <!--<script src="https://cdn.jsdelivr.net/gh/olivernorred/legit-marquees/legit-marquees.js"></script>-->
+      <footer>Legit Marquees Credit: Oliver Norred</footer>
     </div>
+    <div id="rightgrad"></div>
   </body>
 </html>
