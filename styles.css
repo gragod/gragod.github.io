@@ -163,15 +163,14 @@ li li {
   color: red;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   #rightgrad {
-    width: 50%;
+    width: 0%;
   }
   #leftgrad {
-    width: 50%;
+    width: 0%;
   }
   iframe {
-    width: 320;
-    height: 200;
+    width: 100%;
   }
 }
