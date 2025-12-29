@@ -165,12 +165,15 @@ li li {
 
 @media (max-width: 600px) {
   #rightgrad {
-    width: 0%;
+    width: 10%;
   }
   #leftgrad {
-    width: 0%;
+    width: 10%;
   }
   iframe {
     width: 100%;
+  }
+  .basic {
+    width: 90%;
   }
 }
