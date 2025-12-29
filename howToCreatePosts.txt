@@ -1,0 +1,5 @@
+1. Copy the post template into the appropriate folder
+2. Write content
+3. run builder.py script
+4. push things to git hub on source control tab
+5. ...done?
