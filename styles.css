@@ -162,3 +162,16 @@ li li {
 #error {
   color: red;
 }
+
+@media screen and (max-width: 600px) {
+  #rightgrad {
+    width: 50%;
+  }
+  #leftgrad {
+    width: 50%;
+  }
+  iframe {
+    width: 320;
+    height: 200;
+  }
+}
