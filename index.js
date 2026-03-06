@@ -200,7 +200,7 @@
     let lMscript = document.createElement('script');
     lMscript.src = "https://cdn.jsdelivr.net/gh/olivernorred/legit-marquees/legit-marquees.js";
     let element = document.getElementById("subhead");
-    let message = ["test text tech test", "What is play to a horse, is but mere buisness to a monkey", "Oh what a beautiful morning...",
+    let message = ["test text tech test", "What is play to a horse, is but buisness to a monkey", "Oh what a beautiful morning...",
     "I've been known to walk away in the middle of...", "Doing less with more!",
     "Ya like jazz?", "You're my favorite deputy", "TERRAIN - TERRAIN - PULL UP - PULL UP",
     "chess is fun!", "Kept you waiting, huh?", "Ohana means family", "keepin it cool and comfortable"];
